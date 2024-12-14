@@ -1,47 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Alfreds Recepsida</title>
+    
+    <title>Alfreds Receptsida</title>
 </head>
 
 <body>
-    <h1>Shittywebsite.duckdns.org Recepsida</h1>
-    <p>Här samlas goda recept, konstigt nog bara chokladrecept</p>
 
-    <table>
-        <th>Namn</th>
-        <th>Tid att tillaga</th>
-        <th>Betyg</th>
+    <div class="menu">
+        <a href="recept.html">Hem</a>
 
-        <tr>
-            <td><a href="chokladbollar/chokladbollar.html">Chokladbollar</a></td>
-            <td>Inte fort nog</td>
-            <td>10/10 Skulle gjort igen</td>
-            
-        </tr>
-        <tr>
-            <td>Chokladtårta</td>
-            <td>Tre år</td>
-            <td>Oklart</td>
-        </tr>
-        <tr>
-            <td>Chokladkaka</td>
-            <td>ca 60 min</td>
-            <td>tja 8/10</td>
-        </tr>
-    </table>
+            <div class="dropdown">
+                <a class="dropbtn">Recept</a>
+                <div class="dropdown-content">
+                    <a href="chokladbollar/chokladbollar.html">Chokladbollar</a>
+                    <a href="chokladtårta/chokladtarta.html">Chokladtårta</a>
+                    <a href="chokladkaka/chokladkaka.html">Chokladkaka</a>
+                </div>
+            </div>    
+
+        <a href="about.html">Om oss</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+
+    
+    <header>
+        <h1>Alfreds Receptsida</h1>
+        <p>Här samlas goda recept, konstigt nog bara chokladrecept.</p>    
+    </header>
+    
+    <aside>
+        <table>
+            <tr>
+                <th>Namn</th>
+                <th>Tid att tillaga</th>
+                <th>Betyg</th>
+            </tr>
+            <tr>
+                <td class="item"><a class="btntable" href="chokladbollar/chokladbollar.html">Chokladbollar</a></td>
+                <td>Inte fort nog</td>
+                <td>10/10 Skulle gjort igen</td>
+                
+            </tr>
+            <tr>
+                <td class="item"><a class="btntable" href="chokladtårta/chokladtarta.html">Chokladtårta</a></td>
+                <td>Tre år</td>
+                <td>Oklart</td>
+            </tr>
+            <tr>
+                <td class="item"><a class="btntable" href="chokladkaka/chokladkaka.html">Chokladkaka</a></td>
+                <td>ca 60 min</td>
+                <td>tja 8/10</td>
+            </tr>
+        </table>
+    </aside>
+
+   <main>
 
     <h2>Dagens recept:</h2>
 
     <a href="chokladbollar/chokladbollar.html">
-        <img src = "chokladbollar/chokladbollar.png" alt="Chokladbollar">
+        <img class="dagens" src = "chokladbollar/chokladbollar.png" alt="Chokladbollar">
     </a>
 
-    <p>För fler spännande recept, klicka <a href = "https://www.koket.se/">här!</a></p>
+   </main>
 
+    
+   <footer>
+    <p>För fler spännande recept, klicka <a class="btn" href = "https://www.koket.se/">här!</a></p>
+   </footer>
     
 </body>
 
