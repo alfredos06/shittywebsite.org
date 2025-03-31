@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+                
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+    <title>Inbjudan</title>
+</head>
+
+<body onload="randomQuote()">
+    
+    <div class="grid-container">
+
+        <header>
+            <h1>Inbjudan till Milano Pizzeria</h1>
+        </header>
+
+        <nav>
+            <a href="../invitation/index.html">Hem</a>
+            <a href="../invitation/where/where.html">Vart</a>
+            <a href="../invitation/reservation/reservation.html" >Anmälan</a>
+            <a href="../invitation/contact/contact.html">Kontakt</a>
+            <a href="../invitation/JS/JS.html">JS</a>
+        </nav>
+
+        <aside>
+            <div class="schedule">
+
+                <h2>Schema:</h2>
+                <table>
+                    <tr>
+                        <td>Ankomst:</td>
+                        <td>11:35 - 11:45</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Damma pizza:</td>
+                        <td>11:45 - 12:30</td>
+                    </tr>
+                    <tr>
+                        <td>Avgång:</td>
+                        <td>12:30 - 12:40</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="quoteDiv">
+                <p id="quote" class="quote"></p>
+            </div>
+
+            <div class="settings">
+                <h3>Inställningar:</h3>
+
+                <div class="settingButtons">
+                    <button onclick = "randomQuote()">Change quote</button>
+                    <button id="fontButton" onclick = "changeFont()">Dyslexia Font</button>
+                    <button id="darkModeButton" onclick="VisualMode()">Dark Mode</button>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main>
+            <div class="paragraph" id="paragraphtext">
+                <p id="maintext" class="normal">Detta är en ypperligt angenäm inbjudan till middag på resturang i världsklass.</p>
+                <p id="maintext" class="normal">Vi möts på Pizzeria Milano i Uddevalla för en förstaklassig måltid. Ni må medhava 110 Svenska Kronor för pizzan samt en djärv aptit.</p>
+                <p id="maintext" class="normal">Om er aptit inte duger till hänvisas ni till skamvrån. Alternativt kan man dela en pizza med någon man står nära med. Detta får dock planeras i förväg eller på plats med vederbörande.</p>
+                <p id="maintext" class="normal">Rekommendera alternativ av pizza är: Den angenäme Bagaren och Det fräscha Monstret.
+                <p id="maintext" class="normal">Studera noga schemat och glöm inte att anmäla er.</p>
+                <p id="maintext" class="normal">Om ni vore anlända sent ska skam erbjudas.</p>
+            </div>
+
+            <div class="img">
+                <img src="pizza1.png" alt="God Pizza">
+                <img src="pizza2.png" alt="God Pizza">
+            </div>
+        </main>
+
+        <footer>
+            <p> © Mig själv. Jag är ej ansvarig för eventuella skador</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

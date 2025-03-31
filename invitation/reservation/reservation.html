@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Vart</title>
+</head>
+
+<body>
+    
+    <div class="grid-container">
+
+        <header>
+            <h1>Inbjudan till Milano Pizzeria</h1>
+        </header>
+
+        <nav>
+            <a href="../index.html">Hem</a>
+            <a href="../where/where.html">Vart</a>
+            <a href="../reservation/reservation.html" >Anmälan</a>
+            <a href="../contact/contact.html">Kontakt</a>
+        </nav>
+
+        <aside>
+            <h2>Schema:</h2>
+            <table>
+                <tr>
+                    <td>Ankomst:</td>
+                    <td>11:35 - 11:45</td>
+                    
+                </tr>
+                <tr>
+                    <td>Damma pizza:</td>
+                    <td>11:45 - 12:30</td>
+                </tr>
+                <tr>
+                    <td>Avgång:</td>
+                    <td>12:30 - 12:40</td>
+                </tr>
+            </table>
+        </aside>
+
+        <main>
+            <form action="../confirmation.html">
+                <fieldset>
+                    <legend><strong>Anmälan</strong></legend>
+                        
+                    <br>
+            
+                    <label>Namn:</label>
+                        <input type="text" id="name" name="name">
+            
+                    <br>
+                    <br>
+            
+                    <label>E-Post:</label>
+                        <input type="text" id="email" name="email">
+                    
+                    
+                    <br>
+                    <br>
+
+                    <label>Telefonnummer:</label>
+                        <input type="text" id="number" name="number">
+                    
+                    
+                    <br>
+                    <br>
+            
+                    <textarea name="comment" rows="15" cols="50">Övriga detaljer</textarea>
+                    
+                    <br>
+            
+                    <input type="submit">
+                    <br>
+        
+                </fieldset>
+            </form>
+                
+            <div>
+                <h2>Räkna ut parkeringskostnad:</h2>
+                <p>Priset beror på antal fordon och tid</p>
+                <label for="hours">Antal timmar:</label>
+                <input type="number" id="hours" name="hours" value="2" min="1" max="24">
+                <br>
+                <label for="amount">Antal bilar:</label>
+                <input type="number" id="amount" name="amount" value="1">
+                <br>
+                <button onclick="calculate()">Beräkna</button>
+                <br>
+                <label id="price" for="price">Pris:</label>
+            </div>
+        </main>
+
+        <footer>
+            <p> © Mig själv</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -9,15 +9,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     
     <title>Alfreds Receptsida</title>
 </head>
 
-<body>
+<body onload="changeDaily()">
 
     <div class="menu">
-        <a href="recept.html">Hem</a>
+        <a href="index.html">Hem</a>
 
             <div class="dropdown">
                 <a class="dropbtn">Recept</a>
@@ -33,12 +35,12 @@
     </div>
 
     
-    <header>
-        <h1>Alfreds Receptsida</h1>
+    <header id="header">
+        <h1>Shittywebsite.duckdns.org Receptsida</h1>
         <p>Här samlas goda recept, konstigt nog bara chokladrecept.</p>    
     </header>
     
-    <aside>
+    <aside id="aside">
         <table>
             <tr>
                 <th>Namn</th>
@@ -64,19 +66,25 @@
         </table>
     </aside>
 
-   <main>
+   <main id="main">
 
     <h2>Dagens recept:</h2>
 
-    <a href="chokladbollar/chokladbollar.html">
-        <img class="dagens" src = "chokladbollar/chokladbollar.png" alt="Chokladbollar">
+    <a id="dailyLink" href="chokladbollar/chokladbollar.html">
+        <img id="dailyImage" class="dagens" src = "chokladbollar/chokladbollar.png" alt="Chokladbollar">
     </a>
+
+    
 
    </main>
 
     
-   <footer>
+   <footer id="footer">
     <p>För fler spännande recept, klicka <a class="btn" href = "https://www.koket.se/">här!</a></p>
+
+    <button id="button" onclick="VisualMode()">Väldigt dålig Dark Mode</button>
+
+    <button id="button2" onclick="addPictures()">Episk bild</button>
    </footer>
     
 </body>
