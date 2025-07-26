@@ -1,0 +1,500 @@
+:root {
+    --header-backgroudcolor: rgb(255, 255, 255);
+    --aside-backgroudcolor: rgb(255, 67, 67);
+    --nav-backgroundcolor: rgb(255, 46, 46);
+    --main-backgroudcolor: rgb(0, 0, 0);
+    --footer-backgroudcolor: #B30912;
+
+    --aside-color: rgb(227, 6, 19);
+    --gravera-color: rgb(227, 6, 19);
+    --footer-color: rgb(255, 255, 255);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+p {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+h1 {
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+h2 {
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100%;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.container {
+    position: sticky; 
+    top: 0px;
+}   
+
+.aside {
+    background-color: var(--aside-backgroudcolor);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 5px;
+
+    width: 100%;
+}
+
+.aside-logo-div {    
+    width: 25%;
+    text-align: center;
+}
+
+.aside-logo {
+    width: 40px;
+}
+
+.aside-search-div {
+   width: 50%;
+   text-align: center;
+}
+
+.aside-search-div .search-bar {
+   
+    border: none;
+
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    vertical-align: middle;
+  
+}
+
+.aside-search-div .search-button {
+
+    background-color: var(--aside-color);
+    color: white;
+    border: none;
+    padding: 3px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    vertical-align:middle
+    
+}
+
+.aside-search-div .serach-button:hover {
+    background-color: rgb(169, 9, 17);
+}
+
+.aside-search-div .search-button:active {
+    background-color: rgb(124, 7, 12);
+}
+
+.aside-search-form {
+    text-decoration: none;
+}
+
+.aside-links-div {
+    width: 25%;
+    text-align: right;
+    height: 100%;
+    padding-right: 5%;
+}
+
+/*
+Might be useful
+.aside-link {
+    text-decoration: none;
+    background-color: var(--aside-color);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 2%;
+    padding: 4px 5px 4px 5px;
+}
+
+*/
+
+.aside-link-icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    text-decoration: none;
+    background-color: var(--aside-color);
+    border-radius: 5px;
+    
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 2%;
+    padding: 4px 4px 0px 4px;
+    vertical-align: middle;
+}
+
+/* might be useful 
+.aside-link:hover {
+    background-color: rgb(169, 9, 17);
+}
+.aside-link:active {
+    background-color: rgb(124, 7, 12);
+}
+*/
+
+.aside-link-icon:hover {
+    background-color: rgb(169, 9, 17);
+}
+
+.aside-link-icon:active {
+    background-color: rgb(124, 7, 12);
+}
+
+
+aside a {
+    color: black;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.header {
+   background-color: var(--header-backgroudcolor);
+   display: flex;
+   justify-content: center;
+}
+
+.logo {
+   margin: 10px;
+   max-width: 100%;
+   height: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;	
+
+    width: 100%;
+
+    background-color: var(--nav-backgroundcolor);
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+
+    background-color: rgb(232, 12, 23);
+
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 145%;
+
+    text-decoration: none;
+    color: white;
+    margin: 10px 1.5%;
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgb(169, 9, 17);
+}
+
+nav  a:active {
+    background-color: rgb(124, 7, 12);
+}
+
+main {
+    margin: 20px auto;
+}
+
+
+.contact-container {
+   margin: 20px auto;
+   width: 100%;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    outline: none;
+
+}
+
+input[type="text"]:focus {
+    border-radius: 6px;
+    background-color:  #d4e9fa;
+    border: 2px solid var(--gravera-color);
+
+}
+
+input[type="submit"] {
+    
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--gravera-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px; 
+}
+
+input[type="submit"]:hover { 
+    background-color: var(--gravera-color);
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    border: 1px solid lightgray;
+
+    margin: 5px;
+}
+
+textarea:focus {
+    border-radius: 6px;
+    background-color: #d4e9fa;
+    border: 2px solid var(--gravera-color);
+}
+
+select {
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    outline: none;
+}
+
+select:focus {
+    border-radius: 6px;
+    background-color: #d4e9fa;
+    border: 2px solid var(--gravera-color);
+}
+
+label {
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+
+    margin: 5px;
+}
+
+label.radio {
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+fieldset {
+    border: 1px solid lightgray;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 4px rgb(200, 200, 200);
+}
+
+legend {
+    background-color: #dbdbdb;
+    padding: 2px 10px;
+    border-radius: 5px;
+
+    margin: 10px;
+}
+
+
+.main-a {
+
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+
+    text-decoration: none;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 2px 5px 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(232, 12, 23);
+    box-shadow: 1px 1px 6px black;
+}
+
+.main-a:hover {
+    background-color: rgb(169, 9, 17);
+}
+.main-a:active {
+    background-color: rgb(124, 7, 12);
+}
+
+.grid-container-footer {
+
+    background-color: var(--footer-backgroudcolor);
+    color: white;
+
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.footer-links-div {
+    grid-column: 2 / 3;
+}
+
+.footer-contactinfo-div {
+    grid-column: 3 / 4;
+}
+
+.footer-sociallinks-div {
+    grid-column: 4 / 5; 
+}
+
+.footer-copyright-div {
+    grid-column: 1 / 6;
+    text-align: center;
+}
+
+.footer-h2 {
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 145%;
+    margin: 10px 0px 10px 0px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0px 5px 0px;
+
+    font-size: 18px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link:active {
+    color: rgb(88, 88, 88);
+}
+
+footer a {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+footer p {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+.fa-brands{    
+    box-sizing: content-box;
+    color: var(--gravera-color);
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 2rem;
+    margin: 0px 5px 0px 5px;
+}
+
+
+
+@media (max-width: 768px) { 
+
+    textarea {
+        width: 90%;
+    }
+    input[type="text"] {
+        width: 90%;
+    }
+    select {
+        width: 90%;
+    }
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .footer-links-div {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+    
+    .footer-contactinfo-div {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+    
+    .footer-sociallinks-div {
+        grid-column: 2 / 3; 
+        text-align: center;
+    }
+    
+    .footer-copyright-div {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+
+}

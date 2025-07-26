@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="logoGraveraIcon.png">
-    <title>Gravera UF</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="gravera.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<header>
-    <img src="logoGraveraFull.png">
-</header>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bd9550438.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Gravera/logoPics/GraveraSmallLogoSquare.png">
+
+
+    <title>Gravera UF</title>
+</head>
 
 <body>
-    <main class="main">
-        <p>Hej hej</p>
-        <p>Hejj då</p>
-    </main>
+
+      <div class="container">
+         <div class="aside">
+
+            <div class="aside-logo-div">
+               <a href="gravera.html"> 
+                  <img class="aside-logo" src="../Gravera/logoPics/GraveraSmallLogoTransparant.png" alt="Gravera UF">
+               </a>
+            </div>
+
+            <div class="aside-search-div"> 
+               <form  class="aside-search-form" method="get">
+                  <input class="search-bar" type="text" name="search" placeholder="Sök...">
+                  <button class="search-button" type="submit">Sök</button>
+               </form>
+            </div>
+
+            <div class="aside-links-div">
+               <a class="aside-link-icon" href="../Gravera/cart/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+               <a class="aside-link-icon" onclick="alert('Not avalible')"><span class="material-symbols-outlined">login</span></a>
+            </div>
+
+         </div>
+      
+      </div>
+
+     
+
+     <header class="header">
+
+        <img class="logo" src="../Gravera/logoPics/GraveraFullLogoTransparant.png" alt="Gravera UF">
+
+     </header>
+
+     <nav class="nav">
+
+        <a href="../Gravera/gravera.html">Hem</a>
+        <a href="../Gravera/products/products.html">Produkter</a>
+        <a href="../Gravera/contact/contact.html">Kontakt</a>
+        <a href="../Gravera/about/about.html">Om oss</a>
+
+     </nav>
+
+     <main class="grid-container-main">
+
+         <div class="main-news-div">
+            <h1>Nyheter</h1>
+            <hr>
+            <div class="news-item-div">
+               <div class="news-item-pic-div">
+                  <img class="news-item-pic" src="../Gravera/logoPics/freeShipping.png" alt="Free Shipping Icon">
+               </div>
+               <div class="news-item-desc-div">
+                  <h2>Vi är glada att meddela att vi nu erbjuder fri frakt på alla beställningar över 500 kr!</h2>
+               </div>
+            </div>
+
+            <div class="news-item-div">
+               <div class="news-item-pic-div">
+                  <img class="news-item-pic" src="../Gravera/logoPics/convention.jpg" alt="Picture of a convention">
+               </div>
+               <div class="news-item-desc-div">
+                  <h2>Vi kommer att delta i Uddevalla mässan den 15-16 juni. Kom gärna förbi vår monter och träffa oss!</h2>
+               </div>
+            </div>
+         </div>
+
+         <div class="main-highlights-div">
+            <h1>Höjdpunkter</h1>
+            <p>Våra mest populära produkter just nu:</p>
+            <div class="highlights-item-div">
+               <img class="highlights-item-pic" src="../Gravera/productsPics/GraveradSkärbräda.png" alt="Graverad skärbräda">
+               <p>Graverad skärbräda</p>
+               <p>Pris: 299 kr</p>
+            </div>
+         </div>
+
+      
+     </main>
+
+     <footer class="grid-container-footer">
+        
+         <div class="footer-links-div">
+            <h2 class="footer-h2">Snabblänkar:</h2>
+            <hr>
+            <a class="footer-link" href="../Gravera/gravera.html">Hem</a>
+            <a class="footer-link" href="../Gravera/products/products.html">Produkter</a>
+            <a class="footer-link" href="../Gravera/contact/contact.html">Kontakt</a>
+            <a class="footer-link" href="../Gravera/about/about.html">Om oss</a>
+         </div>
+
+         <div class="footer-contactinfo-div">
+            <h2 class="footer-h2">Kontakta oss:</h2>
+            <hr>
+            <p>Gravera UF</p>
+            <p>Mail: gravera.uf@gmail.com</p>
+            <p>Adress: Gravera UF, 12345 Uddevalla</p>
+         </div>
+
+         <div class="footer-sociallinks-div">   
+            
+            <h2 class="footer-h2">Följ oss:</h2>
+            <hr>
+            <a href="https://www.instagram.com/graverauf?igsh=MnN1dGRjM3JxZzN2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1ENR5VB7Ny/"><i class="fa-brands fa-facebook"></i></a>
+         </div> 
+
+         <div class="footer-copyright-div">
+            
+            <p>© 2025 Gravera UF. All rights reserved.</p>
+
+         </div>
+
+     </footer>
+    
 </body>
+</html>
