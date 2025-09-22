@@ -1,3 +1,3 @@
-# shittywebsite.duckdns.org
-shittywebsite.duckdns.org
-Source code to shittywebsite.duckdns.org
+# shittywebsite.org
+shittywebsite.org
+Source code to shittywebsite.org
