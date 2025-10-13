@@ -1,3 +1,31 @@
 * {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.fff313 {
     background-color: #fff313;
+    width: 100%;
+
+      font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+    grid-column: 1 / 2;
+}
+
+.eee313 {
+    background-color: #eee313;
+    width: 100%;
+
+    grid-column: 2 / 2;
 }
