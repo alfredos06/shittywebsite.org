@@ -1,7 +1,7 @@
 function onLoad() {
-    randomQuote()
-    darkModeChecker()
-    console.log("E")
+    randomQuote();
+    darkModeChecker();
+    console.log("E");
 }
 
 
@@ -117,7 +117,7 @@ function darkModeChecker() {
         darkMode = true;
     }
 
-    VisualMode()
+    VisualMode();
 }
 
 
