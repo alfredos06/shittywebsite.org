@@ -1,3 +1,10 @@
+function onLoad() {
+    randomQuote()
+    darkModeChecker()
+    console.log("E")
+}
+
+
 function randomQuote() {
     
     var quotes = [
@@ -59,6 +66,9 @@ function randomQuote() {
 
 }
 
+
+
+
 var dyslexiaFont = false;
 
 function changeFont() {
@@ -97,10 +107,24 @@ const footerBlue = 'rgb(173, 216, 230)';
 
 var darkMode = false;
 
+const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+function darkModeChecker() {
+
+    if (darkModeMql && darkModeMql.matches) {
+        darkMode = false;
+    } else {
+        darkMode = true;
+    }
+
+    VisualMode()
+}
+
+
 function VisualMode() {
 
     var button = document.getElementById("darkModeButton");
-
+ 
     var body = document.body;
 
     var header = document.getElementsByTagName("header")[0];
@@ -115,6 +139,7 @@ function VisualMode() {
 
 
     if (!darkMode) {
+
         
         body.style.backgroundColor = darkgray;
 
